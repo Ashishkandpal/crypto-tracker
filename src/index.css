@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #111;
+  --blue: rgb(0, 140, 255);
+  --neongreen: #51ff25;
+  --orange: orange;
+  --pink: pink;
+  --grey: #888;
+  --lightgrey: #f5f5f5;
+  --brightgreen: #00ff00;
+  --brightmagenta: #ff00ff;
+  --darkgrey: #1b1b1b;
+  --green: #61c96f;
+  --red: #f94141;
+  --darkblue: rgba(9, 9, 121, 1);
+  --gradient: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 100%
+  );
+  --lightgradient: linear-gradient(
+    90deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins", sans-serif;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 100%
+  );
+  color: var(--white);
+}
+
+::selection {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(9, 9, 121, 1) 100%;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+  border-radius: 3rem;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+.gradient-wrapper {
+  display: block;
+  background: var(--lightgradient);
+  width: 90%;
+  margin: 1.5rem auto;
+  border-radius: 1rem;
+  padding: 0 0.5rem;
+}
+
+.chart-wrapper {
+  background: var(--gradient);
+  width: 90%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.coins-days-flex {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  gap: 3rem;
+}

@@ -1,0 +1,24 @@
+.search-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  color: var(--brightgreen);
+  background: var(--lightgradient);
+  width: 80%;
+  margin: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3rem;
+}
+
+.search-flex input {
+  background-color: var(--lightgradient);
+  width: 100%;
+  outline: none;
+  border: none;
+  font-family: "Poppins";
+  font-size: 18px;
+  color: var(--white);
+}
