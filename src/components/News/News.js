@@ -9,14 +9,16 @@ const News = () => {
   const filteredData = [];
 
   const randomGen = () => {
-    return Math.floor(Math.random() * 100);
+    return Math.floor(Math.random() * 50);
   };
 
   useEffect(() => {
     axios
-      .get(
-        "https://api.newscatcherapi.com/v2/search?q=cryptocurrency' -H 'x-api-key: zMhrp17Kd_Kx0ONIEM7hPPsNGgm82iydZyNRGNDvL"
-      )
+      .get("https://api.newscatcherapi.com/v2/search?q=cryptocurrency", {
+        headers: {
+          "x-api-key": "zMhrp17Kd_Kx0ONIEM7hPPsNGgm82iydZyNRGNDvL-k",
+        },
+      })
       .then((res) => {
         setNewsData(res.data.articles); // Set the actual news articles array
         setIsLoading(false); // Update isLoading state to false
