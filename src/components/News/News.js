@@ -15,7 +15,7 @@ const News = () => {
   useEffect(() => {
     axios
       .get(
-        "https://newsapi.org/v2/everything?q=cryptocurrency&apiKey=9fee024676304f6fa01a60eee032df4c"
+        "https://api.newscatcherapi.com/v2/search?q=cryptocurrency' -H 'x-api-key: zMhrp17Kd_Kx0ONIEM7hPPsNGgm82iydZyNRGNDvL"
       )
       .then((res) => {
         setNewsData(res.data.articles); // Set the actual news articles array
@@ -45,8 +45,8 @@ const News = () => {
           <React.Fragment key={i}>
             <NewsInfo
               title={news.title}
-              description={news.description}
-              url={news.url}
+              description={news.summary}
+              url={news.link}
             />
           </React.Fragment>
         ))
