@@ -16,7 +16,7 @@ const News = () => {
     axios
       .get("https://api.newscatcherapi.com/v2/search?q=cryptocurrency", {
         headers: {
-          "x-api-key": "zMhrp17Kd_Kx0ONIEM7hPPsNGgm82iydZyNRGNDvL-k",
+          "x-api-key": "Kp1Bu37uJ355ltqC9SbKZnazgMzo3GKIVdCX9zNpt4w",
         },
       })
       .then((res) => {
