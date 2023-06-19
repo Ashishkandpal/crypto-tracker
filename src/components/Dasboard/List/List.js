@@ -13,6 +13,7 @@ import { addToWatchlist } from "../../../functions/addToWatchlist";
 import StarRoundedIcon from "@mui/icons-material/StarRounded";
 import { hasBeenAdded } from "../../../functions/hasBeenAdded";
 import { removeFromWatchlist } from "../../../functions/removeFromWatchlist";
+import { Toaster } from "react-hot-toast";
 
 function List({ coin, delay, isWatchlistPage }) {
   const [added, setAdded] = useState(hasBeenAdded(coin.id));
@@ -124,6 +125,9 @@ function List({ coin, delay, isWatchlistPage }) {
           </IconButton>
         </td>
       </motion.tr>
+      <div>
+        <Toaster />
+      </div>
     </Link>
   );
 }

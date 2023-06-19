@@ -1,4 +1,4 @@
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 export const addToWatchlist = (id) => {
   let items = localStorage.getItem("watchlist");
   if (items) {

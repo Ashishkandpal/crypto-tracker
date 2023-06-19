@@ -1,4 +1,4 @@
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 
 export const removeFromWatchlist = (id) => {
   if (window.confirm("Are you sure you want to remove this coin")) {

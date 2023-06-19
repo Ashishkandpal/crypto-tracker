@@ -11,6 +11,7 @@ import { addToWatchlist } from "../../../functions/addToWatchlist";
 import StarRoundedIcon from "@mui/icons-material/StarRounded";
 import { hasBeenAdded } from "../../../functions/hasBeenAdded";
 import { removeFromWatchlist } from "../../../functions/removeFromWatchlist";
+import { Toaster } from "react-hot-toast";
 
 function Grid({ coin, delay, isWatchlistPage }) {
   const [added, setAdded] = useState(hasBeenAdded(coin.id));
@@ -99,6 +100,9 @@ function Grid({ coin, delay, isWatchlistPage }) {
           </p>
         </div>
       </motion.div>
+      <div>
+        <Toaster />
+      </div>
     </Link>
   );
 }
