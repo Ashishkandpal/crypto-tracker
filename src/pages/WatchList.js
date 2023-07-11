@@ -23,6 +23,19 @@ function WatchlistPage() {
     setLoading(false);
   };
 
+  // useEffect(() => {
+  //   async function getData() {
+  //     setLoading(true);
+  //     const allCoins = await get100Coins();
+  //     console.log(allCoins);
+  //     if (coins) {
+  //       setMyWatchlist(allCoins.filter((item) => coins.includes(item.id)));
+  //     }
+  //     setLoading(false);
+  //   }
+  //   getData();
+  // }, []);
+
   return (
     <div>
       {loading || !coins ? (

@@ -11,17 +11,14 @@ const News = () => {
   const randomGen = () => {
     return Math.floor(Math.random() * 50);
   };
-
   useEffect(() => {
     axios
-      .get("https://api.newscatcherapi.com/v2/search?q=cryptocurrency", {
-        headers: {
-          "x-api-key": "Kp1Bu37uJ355ltqC9SbKZnazgMzo3GKIVdCX9zNpt4w",
-        },
-      })
+      .get(
+        "https://newsapi.org/v2/everything?q=cryptocurrency&apiKey=9fee024676304f6fa01a60eee032df4c"
+      )
       .then((res) => {
-        setNewsData(res.data.articles); // Set the actual news articles array
-        setIsLoading(false); // Update isLoading state to false
+        setNewsData(res.data.articles);
+        setIsLoading(false);
       })
       .catch((err) => {
         console.log(err);
@@ -47,8 +44,8 @@ const News = () => {
           <React.Fragment key={i}>
             <NewsInfo
               title={news.title}
-              description={news.summary}
-              url={news.link}
+              description={news.description}
+              url={news.url}
             />
           </React.Fragment>
         ))
