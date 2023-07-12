@@ -89,6 +89,19 @@
   }
 }
 
+@media only screen and (max-width: 1200px) and (min-width: 850px) {
+  .info-text {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1110px) and (min-width: 850px) {
+  .Discover-new-heading,
+  .crypto-currency-heading {
+    width: 50%;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .layer {
     top: 10rem;
